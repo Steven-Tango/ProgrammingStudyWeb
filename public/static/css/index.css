@@ -1,0 +1,101 @@
+body {
+  background-color: #191718;
+}
+.vh {
+  overflow-y: hidden;
+}
+.lightball {
+  width: 100%;
+  min-width: 1180px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #181616;
+  background-image: url(/static/image/background.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+  z-index: 10;
+  overflow: hidden;
+}
+.lightball.hide {
+  transform-origin: 49% 72.12%;
+  transform-origin: 49.5% 67%;
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.4s ease-out, filter 0.4s ease-out, opacity 0.3s;
+}
+.clubTit {
+  width: 100%;
+  position: absolute;
+  top: 21.4%;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  z-index: 12;
+}
+.clubTit img {
+  margin: 0 auto;
+}
+canvas {
+  opacity: 0.8;
+}
+.banner_btn {
+  width: 30px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -15px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  animation: myfirst 1s infinite;
+  -moz-animation: myfirst 1s infinite;
+  -webkit-animation: myfirst 1s infinite;
+  -o-animation: myfirst 1s infinite;
+}
+@keyframes myfirst {
+  0% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 25px;
+  }
+  75% {
+    bottom: 25px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+.light-bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 271px;
+  background: url(/static/image/img_1.png) no-repeat center bottom;
+  z-index: 11;
+}
+
+.signIn {
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: 45px auto 0;
+  background: #ffbb00;
+  font-size: 24px;
+  color: #2e2e2e;
+  text-align: center;
+  line-height: 50px;
+}
+.signIn:hover {
+  background: #d5a010;
+  color:#000;
+}

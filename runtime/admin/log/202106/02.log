@@ -1,0 +1,68 @@
+[2021-06-02T08:32:57+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[E:\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-02T08:33:06+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[E:\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-02T08:33:59+08:00][sql] CONNECT:[ UseTime:0.010678s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T08:33:59+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000391s ]
+[2021-06-02T08:33:59+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000323s ]
+[2021-06-02T08:33:59+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-02 08:33:59'  WHERE  `id` = 1 [ RunTime:0.003082s ]
+[2021-06-02T09:02:22+08:00][sql] CONNECT:[ UseTime:0.001112s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T09:02:22+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000414s ]
+[2021-06-02T09:02:22+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[2021-06-02T09:02:22+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-02 09:02:22'  WHERE  `id` = 1 [ RunTime:0.000298s ]
+[2021-06-02T09:04:10+08:00][sql] CONNECT:[ UseTime:0.010570s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T09:04:10+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000357s ]
+[2021-06-02T09:04:10+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000300s ]
+[2021-06-02T09:04:10+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-02 09:04:10'  WHERE  `id` = 1 [ RunTime:0.000285s ]
+[2021-06-02T09:13:45+08:00][sql] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T09:13:45+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000445s ]
+[2021-06-02T09:13:45+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000305s ]
+[2021-06-02T09:13:45+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-02 09:13:45'  WHERE  `id` = 1 [ RunTime:0.000301s ]
+[2021-06-02T09:43:06+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:43:29+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:43:56+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:20+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:20+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:20+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:20+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:21+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:21+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:21+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:21+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:21+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:21+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:21+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:22+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:44:22+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:46:23+08:00][error] [0]模板文件不存在:E:\tp\app\admin\view\index\user_controller.html[E:\tp\vendor\topthink\think-view\src\Think.php:146]
+[2021-06-02T09:53:22+08:00][sql] CONNECT:[ UseTime:0.001052s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T09:53:22+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000399s ]
+[2021-06-02T09:53:22+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000293s ]
+[2021-06-02T09:53:22+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-02 09:53:22'  WHERE  `id` = 1 [ RunTime:0.003226s ]
+[2021-06-02T10:18:39+08:00][sql] CONNECT:[ UseTime:0.000985s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T10:18:39+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000408s ]
+[2021-06-02T10:18:39+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000291s ]
+[2021-06-02T10:18:39+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-02 10:18:39'  WHERE  `id` = 1 [ RunTime:0.000273s ]
+[2021-06-02T11:21:51+08:00][error] [0]Class 'app\admin\controller\User' not found[E:\tp\app\admin\controller\Index.php:33]
+[2021-06-02T11:24:52+08:00][error] [8192]Non-static method app\admin\model\User::select_all() should not be called statically[E:\tp\app\admin\controller\Index.php:33]
+[2021-06-02T11:27:34+08:00][error] [8192]Non-static method app\admin\model\User::select_all() should not be called statically[E:\tp\app\admin\controller\Index.php:33]
+[2021-06-02T11:28:49+08:00][error] [8192]Non-static method app\admin\model\User::select_all() should not be called statically[E:\tp\app\admin\controller\Index.php:33]
+[2021-06-02T11:30:43+08:00][sql] CONNECT:[ UseTime:0.000738s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T11:30:43+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000242s ]
+[2021-06-02T11:31:15+08:00][sql] CONNECT:[ UseTime:0.010796s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T11:31:15+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000330s ]
+[2021-06-02T11:33:00+08:00][sql] CONNECT:[ UseTime:0.010681s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T11:33:00+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000376s ]
+[2021-06-02T11:33:23+08:00][sql] CONNECT:[ UseTime:0.010085s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T11:33:23+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000334s ]
+[2021-06-02T11:33:35+08:00][sql] CONNECT:[ UseTime:0.010180s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T11:33:35+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000408s ]
+[2021-06-02T15:16:44+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-02T15:17:25+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-02T15:17:45+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-02T15:18:21+08:00][sql] CONNECT:[ UseTime:0.020281s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T15:18:21+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.004694s ]
+[2021-06-02T15:18:21+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000337s ]
+[2021-06-02T15:18:21+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-02 15:18:21'  WHERE  `id` = 1 [ RunTime:0.001358s ]
+[2021-06-02T15:18:28+08:00][sql] CONNECT:[ UseTime:0.022765s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T15:18:28+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.002052s ]
+[2021-06-02T15:18:30+08:00][sql] CONNECT:[ UseTime:0.013409s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-02T15:18:30+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001982s ]

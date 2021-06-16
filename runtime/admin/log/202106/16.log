@@ -1,0 +1,549 @@
+[2021-06-16T00:00:36+08:00][sql] CONNECT:[ UseTime:0.020193s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:00:36+08:00][sql] SELECT * FROM `user` [ RunTime:0.002235s ]
+[2021-06-16T00:01:10+08:00][sql] CONNECT:[ UseTime:0.018163s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:01:10+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'ta' LIMIT 1 [ RunTime:0.002260s ]
+[2021-06-16T00:01:10+08:00][sql] INSERT INTO `user` SET `name` = 'ta' , `pwd` = 'ba2002cf9983feb1798c62aa7c9d5b53' , `tel` = 13456545 [ RunTime:0.000370s ]
+[2021-06-16T00:01:10+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.004484s ]
+[2021-06-16T00:01:12+08:00][sql] CONNECT:[ UseTime:0.019205s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:01:12+08:00][sql] SELECT * FROM `user` [ RunTime:0.002397s ]
+[2021-06-16T00:01:18+08:00][sql] CONNECT:[ UseTime:0.014792s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:01:18+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.005106s ]
+[2021-06-16T00:01:18+08:00][sql] UPDATE `user`  SET `pwd` = '25f9e794323b453885f5181f1b624d0b'  WHERE  `id` = 1 [ RunTime:0.000480s ]
+[2021-06-16T00:01:25+08:00][sql] CONNECT:[ UseTime:0.013926s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:01:25+08:00][sql] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.002261s ]
+[2021-06-16T00:01:25+08:00][sql] UPDATE `user`  SET `pwd` = '25f9e794323b453885f5181f1b624d0b'  WHERE  `id` = 2 [ RunTime:0.000378s ]
+[2021-06-16T00:01:28+08:00][sql] CONNECT:[ UseTime:0.021704s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:01:28+08:00][sql] SELECT * FROM `user` [ RunTime:0.003061s ]
+[2021-06-16T00:02:27+08:00][sql] CONNECT:[ UseTime:0.019496s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:02:27+08:00][sql] SELECT * FROM `user` WHERE  `name` = '阿斯蒂芬就哦啊' LIMIT 1 [ RunTime:0.002253s ]
+[2021-06-16T00:02:27+08:00][sql] INSERT INTO `user` SET `name` = '阿斯蒂芬就哦啊' , `pwd` = '2c02fecc5f97a0528d42731c5f7cc6be' , `tel` = 156465456 [ RunTime:0.000492s ]
+[2021-06-16T00:02:27+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.000824s ]
+[2021-06-16T00:02:28+08:00][sql] CONNECT:[ UseTime:0.018754s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:02:28+08:00][sql] SELECT * FROM `user` [ RunTime:0.000437s ]
+[2021-06-16T00:02:49+08:00][sql] CONNECT:[ UseTime:0.013465s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:02:49+08:00][sql] SELECT * FROM `user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002210s ]
+[2021-06-16T00:02:49+08:00][sql] UPDATE `user`  SET `pwd` = '25f9e794323b453885f5181f1b624d0b'  WHERE  `id` = 3 [ RunTime:0.000376s ]
+[2021-06-16T00:02:55+08:00][sql] CONNECT:[ UseTime:0.012659s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:02:55+08:00][sql] SELECT * FROM `user` [ RunTime:0.000467s ]
+[2021-06-16T00:02:57+08:00][sql] CONNECT:[ UseTime:0.013530s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:02:57+08:00][sql] SELECT * FROM `course` [ RunTime:0.002187s ]
+[2021-06-16T00:02:57+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000415s ]
+[2021-06-16T00:02:57+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[2021-06-16T00:02:57+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[2021-06-16T00:02:59+08:00][sql] CONNECT:[ UseTime:0.022236s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:02:59+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000450s ]
+[2021-06-16T00:03:01+08:00][sql] CONNECT:[ UseTime:0.021271s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:03:01+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000432s ]
+[2021-06-16T00:03:01+08:00][sql] UPDATE `admin_user`  SET `pwd` = '81dc9bdb52d04dc20036dbd8313ed055'  WHERE  `id` = 3 [ RunTime:0.000354s ]
+[2021-06-16T00:03:05+08:00][sql] CONNECT:[ UseTime:0.024332s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:03:05+08:00][sql] SELECT * FROM `course` [ RunTime:0.000443s ]
+[2021-06-16T00:03:05+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[2021-06-16T00:03:05+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+[2021-06-16T00:03:05+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[2021-06-16T00:05:25+08:00][sql] CONNECT:[ UseTime:0.017626s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:05:25+08:00][sql] SELECT * FROM `course` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002272s ]
+[2021-06-16T00:05:25+08:00][sql] SELECT * FROM `course` WHERE  `coursename` = 'awerawdfasdfg' LIMIT 1 [ RunTime:0.000340s ]
+[2021-06-16T00:05:30+08:00][sql] CONNECT:[ UseTime:0.018916s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:05:30+08:00][sql] SELECT * FROM `course` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000442s ]
+[2021-06-16T00:05:30+08:00][sql] SELECT * FROM `course` WHERE  `coursename` = 'awerawdfasdfg' LIMIT 1 [ RunTime:0.000397s ]
+[2021-06-16T00:08:19+08:00][sql] CONNECT:[ UseTime:0.020056s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:08:19+08:00][sql] SELECT * FROM `course` [ RunTime:0.000477s ]
+[2021-06-16T00:08:19+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000405s ]
+[2021-06-16T00:08:19+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000326s ]
+[2021-06-16T00:08:19+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000339s ]
+[2021-06-16T00:08:21+08:00][sql] CONNECT:[ UseTime:0.025047s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:08:21+08:00][sql] SELECT * FROM `user` [ RunTime:0.000456s ]
+[2021-06-16T00:08:23+08:00][error] [10500]method not exist:think\db\Query->delCour[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\BaseQuery.php:117]
+[2021-06-16T00:08:28+08:00][error] [10500]method not exist:think\db\Query->delCour[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\BaseQuery.php:117]
+[2021-06-16T00:11:28+08:00][sql] CONNECT:[ UseTime:0.016466s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:11:28+08:00][sql] SELECT * FROM `user` [ RunTime:0.000538s ]
+[2021-06-16T00:11:31+08:00][error] [10500]method not exist:think\db\Query->delCour[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\BaseQuery.php:117]
+[2021-06-16T00:11:35+08:00][error] [10500]method not exist:think\db\Query->delCour[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\BaseQuery.php:117]
+[2021-06-16T00:12:28+08:00][sql] CONNECT:[ UseTime:0.014141s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:12:28+08:00][sql] SELECT * FROM `user` [ RunTime:0.000424s ]
+[2021-06-16T00:12:30+08:00][sql] CONNECT:[ UseTime:0.028552s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:12:30+08:00][sql] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000489s ]
+[2021-06-16T00:12:30+08:00][sql] DELETE FROM `user` WHERE  `id` = 2 [ RunTime:0.002358s ]
+[2021-06-16T00:12:31+08:00][sql] CONNECT:[ UseTime:0.018149s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:12:31+08:00][sql] SELECT * FROM `user` [ RunTime:0.000399s ]
+[2021-06-16T00:13:33+08:00][sql] CONNECT:[ UseTime:0.025201s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:13:33+08:00][sql] SELECT * FROM `user` WHERE  `name` LIKE '%423%' [ RunTime:0.000416s ]
+[2021-06-16T00:14:00+08:00][sql] CONNECT:[ UseTime:0.024360s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:14:00+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asda' LIMIT 1 [ RunTime:0.000427s ]
+[2021-06-16T00:14:00+08:00][error] [10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'sdasd' for column 'tel' at row 1[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-16T00:14:02+08:00][sql] CONNECT:[ UseTime:0.017275s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:14:02+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asda' LIMIT 1 [ RunTime:0.000442s ]
+[2021-06-16T00:14:02+08:00][error] [10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'sdasd' for column 'tel' at row 1[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-16T00:14:08+08:00][sql] CONNECT:[ UseTime:0.001965s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:14:08+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asda' LIMIT 1 [ RunTime:0.000443s ]
+[2021-06-16T00:14:08+08:00][error] [10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'sdasd' for column 'tel' at row 1[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-16T00:14:28+08:00][sql] CONNECT:[ UseTime:0.012416s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:14:28+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asda' LIMIT 1 [ RunTime:0.002261s ]
+[2021-06-16T00:14:28+08:00][error] [10501]SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'tel' at row 1[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-16T00:14:36+08:00][sql] CONNECT:[ UseTime:0.021662s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:14:36+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asda' LIMIT 1 [ RunTime:0.002176s ]
+[2021-06-16T00:14:36+08:00][error] [10501]SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'tel' at row 1[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-16T00:15:06+08:00][sql] CONNECT:[ UseTime:0.016248s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:15:06+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asda' LIMIT 1 [ RunTime:0.002153s ]
+[2021-06-16T00:15:06+08:00][error] [10501]SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'tel' at row 1[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-16T00:15:10+08:00][sql] CONNECT:[ UseTime:0.020474s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:15:10+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asda' LIMIT 1 [ RunTime:0.000733s ]
+[2021-06-16T00:15:10+08:00][sql] INSERT INTO `user` SET `name` = 'asda' , `pwd` = 'fc8cadd6d8bd239b7ca50675510f82d3' , `tel` = 556556 [ RunTime:0.000342s ]
+[2021-06-16T00:15:10+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.000710s ]
+[2021-06-16T00:15:11+08:00][sql] CONNECT:[ UseTime:0.023530s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:15:11+08:00][sql] SELECT * FROM `user` WHERE  `name` LIKE '%423%' [ RunTime:0.000683s ]
+[2021-06-16T00:15:20+08:00][sql] CONNECT:[ UseTime:0.001363s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:15:20+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'sad' LIMIT 1 [ RunTime:0.000386s ]
+[2021-06-16T00:15:20+08:00][sql] INSERT INTO `user` SET `name` = 'sad' , `pwd` = '57a6a0811829faf34a78ca625c383ec9' , `tel` = 23413123 [ RunTime:0.000330s ]
+[2021-06-16T00:15:20+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.003766s ]
+[2021-06-16T00:15:21+08:00][sql] CONNECT:[ UseTime:0.021553s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:15:21+08:00][sql] SELECT * FROM `user` WHERE  `name` LIKE '%423%' [ RunTime:0.000431s ]
+[2021-06-16T00:15:22+08:00][sql] CONNECT:[ UseTime:0.012979s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:15:22+08:00][sql] SELECT * FROM `user` [ RunTime:0.000726s ]
+[2021-06-16T00:15:29+08:00][sql] CONNECT:[ UseTime:0.001227s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:15:29+08:00][sql] SELECT * FROM `user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000454s ]
+[2021-06-16T00:15:29+08:00][sql] UPDATE `user`  SET `pwd` = '25f9e794323b453885f5181f1b624d0b'  WHERE  `id` = 5 [ RunTime:0.000397s ]
+[2021-06-16T00:16:20+08:00][sql] CONNECT:[ UseTime:0.018430s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:20+08:00][sql] SELECT * FROM `user` [ RunTime:0.000443s ]
+[2021-06-16T00:16:23+08:00][sql] CONNECT:[ UseTime:0.014725s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:23+08:00][sql] SELECT * FROM `user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000427s ]
+[2021-06-16T00:16:24+08:00][sql] CONNECT:[ UseTime:0.024687s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:24+08:00][sql] SELECT * FROM `user` [ RunTime:0.000499s ]
+[2021-06-16T00:16:29+08:00][sql] CONNECT:[ UseTime:0.013842s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:29+08:00][sql] SELECT * FROM `user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000550s ]
+[2021-06-16T00:16:29+08:00][sql] UPDATE `user`  SET `pwd` = '25f9e794323b453885f5181f1b624d0b'  WHERE  `id` = 4 [ RunTime:0.000486s ]
+[2021-06-16T00:16:30+08:00][sql] CONNECT:[ UseTime:0.025482s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:30+08:00][sql] SELECT * FROM `user` [ RunTime:0.000454s ]
+[2021-06-16T00:16:34+08:00][sql] CONNECT:[ UseTime:0.025756s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:34+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asdf' LIMIT 1 [ RunTime:0.000469s ]
+[2021-06-16T00:16:34+08:00][sql] INSERT INTO `user` SET `name` = 'asdf' , `pwd` = 'f2175573c03be58153246117b06f7258' , `tel` = 1343241 [ RunTime:0.000364s ]
+[2021-06-16T00:16:34+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.000669s ]
+[2021-06-16T00:16:35+08:00][sql] CONNECT:[ UseTime:0.016139s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:35+08:00][sql] SELECT * FROM `user` [ RunTime:0.000423s ]
+[2021-06-16T00:16:40+08:00][sql] CONNECT:[ UseTime:0.014419s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:40+08:00][sql] SELECT * FROM `course` [ RunTime:0.000379s ]
+[2021-06-16T00:16:40+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000353s ]
+[2021-06-16T00:16:40+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[2021-06-16T00:16:40+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[2021-06-16T00:16:41+08:00][sql] CONNECT:[ UseTime:0.012308s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:41+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000459s ]
+[2021-06-16T00:16:43+08:00][sql] CONNECT:[ UseTime:0.017328s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:43+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000415s ]
+[2021-06-16T00:16:43+08:00][sql] CONNECT:[ UseTime:0.012761s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:43+08:00][sql] SELECT * FROM `user` [ RunTime:0.000375s ]
+[2021-06-16T00:16:45+08:00][sql] CONNECT:[ UseTime:0.002653s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:16:45+08:00][sql] SELECT * FROM `course` [ RunTime:0.000443s ]
+[2021-06-16T00:16:45+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000391s ]
+[2021-06-16T00:16:45+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[2021-06-16T00:16:45+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[2021-06-16T00:17:33+08:00][sql] CONNECT:[ UseTime:0.020254s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:17:33+08:00][sql] SELECT * FROM `user` [ RunTime:0.000717s ]
+[2021-06-16T00:17:39+08:00][sql] CONNECT:[ UseTime:0.017300s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:17:39+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000435s ]
+[2021-06-16T00:20:42+08:00][sql] CONNECT:[ UseTime:0.012028s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:20:42+08:00][sql] SELECT * FROM `user` [ RunTime:0.000545s ]
+[2021-06-16T00:20:47+08:00][sql] CONNECT:[ UseTime:0.020544s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:20:47+08:00][sql] SELECT * FROM `course` [ RunTime:0.000439s ]
+[2021-06-16T00:20:47+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000494s ]
+[2021-06-16T00:20:47+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000327s ]
+[2021-06-16T00:20:47+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[2021-06-16T00:20:49+08:00][sql] CONNECT:[ UseTime:0.016255s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:20:49+08:00][sql] SELECT * FROM `user` [ RunTime:0.000405s ]
+[2021-06-16T00:20:51+08:00][sql] CONNECT:[ UseTime:0.016188s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T00:20:51+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000489s ]
+[2021-06-16T08:42:02+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[E:\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-16T08:42:22+08:00][sql] CONNECT:[ UseTime:0.011279s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:42:22+08:00][sql] SELECT * FROM `course` [ RunTime:0.000357s ]
+[2021-06-16T08:42:22+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000372s ]
+[2021-06-16T08:42:22+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[2021-06-16T08:42:25+08:00][sql] CONNECT:[ UseTime:0.010759s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:42:25+08:00][sql] SELECT * FROM `user` [ RunTime:0.000346s ]
+[2021-06-16T08:42:28+08:00][sql] CONNECT:[ UseTime:0.000909s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:42:28+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asdasd' LIMIT 1 [ RunTime:0.000442s ]
+[2021-06-16T08:42:28+08:00][sql] INSERT INTO `user` SET `name` = 'asdasd' , `pwd` = 'a8f5f167f44f4964e6c998dee827110c' , `tel` = asdasdasd [ RunTime:0.003051s ]
+[2021-06-16T08:42:28+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.016611s ]
+[2021-06-16T08:42:29+08:00][sql] CONNECT:[ UseTime:0.011032s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:42:29+08:00][sql] SELECT * FROM `user` [ RunTime:0.000330s ]
+[2021-06-16T08:51:05+08:00][sql] CONNECT:[ UseTime:0.000875s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:51:05+08:00][sql] SELECT * FROM `user` [ RunTime:0.000369s ]
+[2021-06-16T08:51:08+08:00][sql] CONNECT:[ UseTime:0.010932s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:51:08+08:00][sql] SELECT * FROM `user` [ RunTime:0.000347s ]
+[2021-06-16T08:51:08+08:00][sql] CONNECT:[ UseTime:0.010598s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:51:08+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000335s ]
+[2021-06-16T08:51:09+08:00][sql] CONNECT:[ UseTime:0.011436s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:51:09+08:00][sql] SELECT * FROM `course` [ RunTime:0.000343s ]
+[2021-06-16T08:51:09+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000385s ]
+[2021-06-16T08:51:09+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000281s ]
+[2021-06-16T08:52:45+08:00][sql] CONNECT:[ UseTime:0.010663s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:52:45+08:00][sql] SELECT * FROM `course` [ RunTime:0.000326s ]
+[2021-06-16T08:52:45+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000372s ]
+[2021-06-16T08:52:45+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[2021-06-16T08:52:49+08:00][error] [0]Call to undefined function app\admin\controller\requset()[E:\tp\app\admin\controller\Api.php:99]
+[2021-06-16T08:52:50+08:00][error] [0]Call to undefined function app\admin\controller\requset()[E:\tp\app\admin\controller\Api.php:99]
+[2021-06-16T08:52:51+08:00][error] [0]Call to undefined function app\admin\controller\requset()[E:\tp\app\admin\controller\Api.php:99]
+[2021-06-16T08:55:50+08:00][sql] CONNECT:[ UseTime:0.000833s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:55:50+08:00][sql] SELECT * FROM `course` [ RunTime:0.000303s ]
+[2021-06-16T08:55:50+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000379s ]
+[2021-06-16T08:55:50+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000281s ]
+[2021-06-16T08:56:24+08:00][sql] CONNECT:[ UseTime:0.010246s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:56:24+08:00][sql] SELECT * FROM `course` [ RunTime:0.000329s ]
+[2021-06-16T08:56:24+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[2021-06-16T08:56:24+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000279s ]
+[2021-06-16T08:56:27+08:00][error] [0]Call to undefined function app\admin\controller\requset()[E:\tp\app\admin\controller\Api.php:99]
+[2021-06-16T08:56:50+08:00][sql] CONNECT:[ UseTime:0.010333s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:56:50+08:00][sql] SELECT * FROM `course` [ RunTime:0.000280s ]
+[2021-06-16T08:56:50+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000461s ]
+[2021-06-16T08:56:50+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[2021-06-16T08:56:52+08:00][error] [0]Call to undefined function app\admin\controller\requset()[E:\tp\app\admin\controller\Api.php:99]
+[2021-06-16T08:57:16+08:00][sql] CONNECT:[ UseTime:0.011100s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:57:16+08:00][sql] SELECT * FROM `course` [ RunTime:0.000326s ]
+[2021-06-16T08:57:16+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[2021-06-16T08:57:16+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000280s ]
+[2021-06-16T08:57:18+08:00][sql] CONNECT:[ UseTime:0.010774s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:57:18+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000361s ]
+[2021-06-16T08:57:33+08:00][sql] CONNECT:[ UseTime:0.010418s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:57:33+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000358s ]
+[2021-06-16T08:57:45+08:00][sql] CONNECT:[ UseTime:0.010296s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:57:45+08:00][sql] SELECT * FROM `course` WHERE  `coursename` = 'da\'s\'d' LIMIT 1 [ RunTime:0.000340s ]
+[2021-06-16T08:57:45+08:00][sql] INSERT INTO `course` SET `coursename` = 'da\'s\'d' , `coursedesc` = 'da\'s\'da\'D\'a' , `courseimg` = 'courseImg/20210616\\382b2754cc72c47bbb639ab0fd3bfb29.png' , `createtime` = '2021-06-16 08:57:45' , `admin_id` = 1 [ RunTime:0.001326s ]
+[2021-06-16T08:57:45+08:00][sql] SHOW FULL COLUMNS FROM `course` [ RunTime:0.014565s ]
+[2021-06-16T08:57:46+08:00][sql] CONNECT:[ UseTime:0.001002s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:57:46+08:00][sql] SELECT * FROM `course` [ RunTime:0.000325s ]
+[2021-06-16T08:57:46+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[2021-06-16T08:57:46+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000245s ]
+[2021-06-16T08:57:46+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[2021-06-16T08:58:30+08:00][sql] CONNECT:[ UseTime:0.009983s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T08:58:30+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000349s ]
+[2021-06-16T09:08:38+08:00][sql] CONNECT:[ UseTime:0.000966s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:38+08:00][sql] SELECT * FROM `course` [ RunTime:0.000357s ]
+[2021-06-16T09:08:38+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000390s ]
+[2021-06-16T09:08:38+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[2021-06-16T09:08:38+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000280s ]
+[2021-06-16T09:08:49+08:00][sql] CONNECT:[ UseTime:0.016368s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:49+08:00][sql] SELECT * FROM `course` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000675s ]
+[2021-06-16T09:08:49+08:00][sql] DELETE FROM `course` WHERE  `id` = 1 [ RunTime:0.000629s ]
+[2021-06-16T09:08:50+08:00][sql] CONNECT:[ UseTime:0.010476s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:50+08:00][sql] SELECT * FROM `course` [ RunTime:0.000255s ]
+[2021-06-16T09:08:50+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000389s ]
+[2021-06-16T09:08:50+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000257s ]
+[2021-06-16T09:08:51+08:00][sql] CONNECT:[ UseTime:0.010720s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:51+08:00][sql] SELECT * FROM `user` [ RunTime:0.000335s ]
+[2021-06-16T09:08:52+08:00][sql] CONNECT:[ UseTime:0.010702s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:52+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000346s ]
+[2021-06-16T09:08:52+08:00][sql] CONNECT:[ UseTime:0.010866s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:52+08:00][sql] SELECT * FROM `user` [ RunTime:0.000324s ]
+[2021-06-16T09:08:54+08:00][sql] CONNECT:[ UseTime:0.010529s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:54+08:00][sql] SELECT * FROM `course` [ RunTime:0.000339s ]
+[2021-06-16T09:08:54+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000323s ]
+[2021-06-16T09:08:54+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[2021-06-16T09:08:56+08:00][sql] CONNECT:[ UseTime:0.011074s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:56+08:00][sql] SELECT * FROM `course` [ RunTime:0.000322s ]
+[2021-06-16T09:08:56+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[2021-06-16T09:08:56+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000259s ]
+[2021-06-16T09:08:56+08:00][sql] CONNECT:[ UseTime:0.010256s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:56+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000327s ]
+[2021-06-16T09:08:56+08:00][sql] CONNECT:[ UseTime:0.001532s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:08:56+08:00][sql] SELECT * FROM `course` [ RunTime:0.000217s ]
+[2021-06-16T09:08:56+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000240s ]
+[2021-06-16T09:08:56+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000205s ]
+[2021-06-16T09:13:55+08:00][sql] CONNECT:[ UseTime:0.010427s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:13:55+08:00][sql] SELECT * FROM `course` [ RunTime:0.000392s ]
+[2021-06-16T09:13:55+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000359s ]
+[2021-06-16T09:13:55+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000369s ]
+[2021-06-16T09:13:59+08:00][sql] CONNECT:[ UseTime:0.010523s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:13:59+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000328s ]
+[2021-06-16T09:14:08+08:00][sql] CONNECT:[ UseTime:0.009996s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:14:08+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000341s ]
+[2021-06-16T09:16:04+08:00][sql] CONNECT:[ UseTime:0.010081s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:16:04+08:00][sql] SELECT * FROM `user` [ RunTime:0.000329s ]
+[2021-06-16T09:16:09+08:00][sql] CONNECT:[ UseTime:0.010436s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:16:09+08:00][sql] SELECT * FROM `course` [ RunTime:0.000220s ]
+[2021-06-16T09:16:09+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000384s ]
+[2021-06-16T09:16:09+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000298s ]
+[2021-06-16T09:16:10+08:00][sql] CONNECT:[ UseTime:0.011115s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:16:10+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000311s ]
+[2021-06-16T09:18:38+08:00][sql] CONNECT:[ UseTime:0.010143s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:18:38+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000398s ]
+[2021-06-16T09:19:13+08:00][sql] CONNECT:[ UseTime:0.001440s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:19:13+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000374s ]
+[2021-06-16T09:19:40+08:00][sql] CONNECT:[ UseTime:0.000716s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:19:40+08:00][sql] SELECT * FROM `course` [ RunTime:0.000262s ]
+[2021-06-16T09:19:40+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000361s ]
+[2021-06-16T09:19:40+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000283s ]
+[2021-06-16T09:19:41+08:00][sql] CONNECT:[ UseTime:0.011308s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:19:41+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000384s ]
+[2021-06-16T09:19:48+08:00][sql] CONNECT:[ UseTime:0.010158s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:19:48+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000390s ]
+[2021-06-16T09:19:56+08:00][sql] CONNECT:[ UseTime:0.010917s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:19:56+08:00][sql] SELECT * FROM `user` [ RunTime:0.000332s ]
+[2021-06-16T09:21:09+08:00][sql] CONNECT:[ UseTime:0.010832s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:21:09+08:00][sql] SELECT * FROM `course` [ RunTime:0.000311s ]
+[2021-06-16T09:21:09+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000349s ]
+[2021-06-16T09:21:09+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000171s ]
+[2021-06-16T09:22:00+08:00][sql] CONNECT:[ UseTime:0.010732s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:22:00+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000382s ]
+[2021-06-16T09:22:00+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[2021-06-16T09:22:00+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-16 09:22:00'  WHERE  `id` = 1 [ RunTime:0.000281s ]
+[2021-06-16T09:22:02+08:00][sql] CONNECT:[ UseTime:0.011138s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:22:02+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000323s ]
+[2021-06-16T09:22:18+08:00][sql] CONNECT:[ UseTime:0.010736s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:22:18+08:00][sql] SELECT * FROM `user` [ RunTime:0.000342s ]
+[2021-06-16T09:22:29+08:00][sql] CONNECT:[ UseTime:0.011172s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:22:29+08:00][sql] SELECT * FROM `user` [ RunTime:0.000339s ]
+[2021-06-16T09:22:30+08:00][sql] CONNECT:[ UseTime:0.010162s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:22:30+08:00][sql] SELECT * FROM `course` [ RunTime:0.000346s ]
+[2021-06-16T09:22:30+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000359s ]
+[2021-06-16T09:22:30+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[2021-06-16T09:23:53+08:00][sql] CONNECT:[ UseTime:0.010386s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:23:53+08:00][sql] SELECT * FROM `user` [ RunTime:0.000381s ]
+[2021-06-16T09:23:54+08:00][sql] CONNECT:[ UseTime:0.010821s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:23:54+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000189s ]
+[2021-06-16T09:23:55+08:00][sql] CONNECT:[ UseTime:0.011789s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:23:55+08:00][sql] SELECT * FROM `user` [ RunTime:0.000318s ]
+[2021-06-16T09:24:52+08:00][sql] CONNECT:[ UseTime:0.010706s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:24:52+08:00][sql] SELECT * FROM `course` [ RunTime:0.000391s ]
+[2021-06-16T09:24:52+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[2021-06-16T09:24:52+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[2021-06-16T09:30:16+08:00][sql] CONNECT:[ UseTime:0.001165s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:30:16+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000336s ]
+[2021-06-16T09:34:38+08:00][sql] CONNECT:[ UseTime:0.010327s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:34:38+08:00][sql] SELECT * FROM `user` [ RunTime:0.000372s ]
+[2021-06-16T09:47:18+08:00][sql] CONNECT:[ UseTime:0.001143s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T09:47:18+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000414s ]
+[2021-06-16T09:47:18+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000297s ]
+[2021-06-16T09:47:18+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-16 09:47:18'  WHERE  `id` = 1 [ RunTime:0.000271s ]
+[2021-06-16T10:06:54+08:00][sql] CONNECT:[ UseTime:0.000995s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:06:54+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000392s ]
+[2021-06-16T10:06:54+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000293s ]
+[2021-06-16T10:06:54+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-16 10:06:54'  WHERE  `id` = 1 [ RunTime:0.000226s ]
+[2021-06-16T10:06:57+08:00][sql] CONNECT:[ UseTime:0.010308s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:06:57+08:00][sql] SELECT * FROM `course` [ RunTime:0.000344s ]
+[2021-06-16T10:06:57+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000565s ]
+[2021-06-16T10:06:57+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000305s ]
+[2021-06-16T10:07:07+08:00][sql] CONNECT:[ UseTime:0.011101s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:07+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000305s ]
+[2021-06-16T10:07:09+08:00][sql] CONNECT:[ UseTime:0.010690s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:09+08:00][sql] SELECT * FROM `user` [ RunTime:0.000307s ]
+[2021-06-16T10:07:16+08:00][sql] CONNECT:[ UseTime:0.000742s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:16+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'asdasd' LIMIT 1 [ RunTime:0.000270s ]
+[2021-06-16T10:07:17+08:00][sql] CONNECT:[ UseTime:0.010078s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:17+08:00][sql] SELECT * FROM `user` [ RunTime:0.000334s ]
+[2021-06-16T10:07:23+08:00][sql] CONNECT:[ UseTime:0.011151s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:23+08:00][sql] SELECT * FROM `user` [ RunTime:0.000612s ]
+[2021-06-16T10:07:24+08:00][sql] CONNECT:[ UseTime:0.001197s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:24+08:00][sql] SELECT * FROM `user` [ RunTime:0.000289s ]
+[2021-06-16T10:07:24+08:00][sql] CONNECT:[ UseTime:0.010461s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:24+08:00][sql] SELECT * FROM `user` [ RunTime:0.000357s ]
+[2021-06-16T10:07:24+08:00][sql] CONNECT:[ UseTime:0.010499s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:24+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000334s ]
+[2021-06-16T10:07:25+08:00][sql] CONNECT:[ UseTime:0.010377s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:25+08:00][sql] SELECT * FROM `user` [ RunTime:0.000196s ]
+[2021-06-16T10:07:31+08:00][sql] CONNECT:[ UseTime:0.010907s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:31+08:00][sql] SELECT * FROM `user` WHERE  `name` = 'sd' LIMIT 1 [ RunTime:0.000202s ]
+[2021-06-16T10:07:31+08:00][sql] INSERT INTO `user` SET `name` = 'sd' , `pwd` = '4297f44b13955235245b2497399d7a93' , `tel` = 134234 [ RunTime:0.002036s ]
+[2021-06-16T10:07:31+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.026522s ]
+[2021-06-16T10:07:33+08:00][sql] CONNECT:[ UseTime:0.010805s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:07:33+08:00][sql] SELECT * FROM `user` [ RunTime:0.000341s ]
+[2021-06-16T10:18:52+08:00][sql] CONNECT:[ UseTime:0.000891s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:18:52+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000548s ]
+[2021-06-16T10:18:52+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000328s ]
+[2021-06-16T10:18:52+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-16 10:18:52'  WHERE  `id` = 1 [ RunTime:0.000323s ]
+[2021-06-16T10:19:15+08:00][sql] CONNECT:[ UseTime:0.011145s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:19:15+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000363s ]
+[2021-06-16T10:19:15+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[2021-06-16T10:19:15+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-16 10:19:15'  WHERE  `id` = 1 [ RunTime:0.000280s ]
+[2021-06-16T10:23:19+08:00][sql] CONNECT:[ UseTime:0.010218s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:23:19+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000373s ]
+[2021-06-16T10:23:19+08:00][sql] UPDATE `admin_user`  SET `pwd` = 'efa72b7bd0a1f2574e95e97b74477145'  WHERE  `id` = 1 [ RunTime:0.000303s ]
+[2021-06-16T10:24:26+08:00][sql] CONNECT:[ UseTime:0.010030s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:24:26+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[2021-06-16T10:24:26+08:00][sql] UPDATE `admin_user`  SET `pwd` = '453f99065ad8a89cc4cb633434d6f9a3'  WHERE  `id` = 1 [ RunTime:0.002896s ]
+[2021-06-16T10:26:57+08:00][sql] CONNECT:[ UseTime:0.010958s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:26:57+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000380s ]
+[2021-06-16T10:26:57+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[2021-06-16T10:26:57+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-16 10:26:57'  WHERE  `id` = 1 [ RunTime:0.000266s ]
+[2021-06-16T10:28:11+08:00][sql] CONNECT:[ UseTime:0.011042s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:28:11+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000396s ]
+[2021-06-16T10:28:11+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000295s ]
+[2021-06-16T10:28:11+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-16 10:28:11'  WHERE  `id` = 1 [ RunTime:0.000328s ]
+[2021-06-16T10:33:44+08:00][sql] CONNECT:[ UseTime:0.000951s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:33:44+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000387s ]
+[2021-06-16T10:33:44+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000252s ]
+[2021-06-16T10:33:44+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-16 10:33:44'  WHERE  `id` = 1 [ RunTime:0.000313s ]
+[2021-06-16T10:33:47+08:00][sql] CONNECT:[ UseTime:0.010484s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:33:47+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000347s ]
+[2021-06-16T10:34:15+08:00][sql] CONNECT:[ UseTime:0.010746s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:15+08:00][sql] SELECT * FROM `user` [ RunTime:0.000339s ]
+[2021-06-16T10:34:15+08:00][sql] CONNECT:[ UseTime:0.010468s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:15+08:00][sql] SELECT * FROM `course` [ RunTime:0.000378s ]
+[2021-06-16T10:34:15+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000369s ]
+[2021-06-16T10:34:15+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[2021-06-16T10:34:16+08:00][sql] CONNECT:[ UseTime:0.011205s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:16+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000501s ]
+[2021-06-16T10:34:16+08:00][sql] CONNECT:[ UseTime:0.010846s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:16+08:00][sql] SELECT * FROM `user` [ RunTime:0.000321s ]
+[2021-06-16T10:34:16+08:00][sql] CONNECT:[ UseTime:0.010686s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:16+08:00][sql] SELECT * FROM `user` [ RunTime:0.000329s ]
+[2021-06-16T10:34:17+08:00][sql] CONNECT:[ UseTime:0.010913s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:17+08:00][sql] SELECT * FROM `course` [ RunTime:0.000638s ]
+[2021-06-16T10:34:17+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000527s ]
+[2021-06-16T10:34:17+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000480s ]
+[2021-06-16T10:34:17+08:00][sql] CONNECT:[ UseTime:0.009977s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:17+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000339s ]
+[2021-06-16T10:34:18+08:00][sql] CONNECT:[ UseTime:0.010787s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:18+08:00][sql] SELECT * FROM `user` [ RunTime:0.000318s ]
+[2021-06-16T10:34:18+08:00][sql] CONNECT:[ UseTime:0.009965s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:18+08:00][sql] SELECT * FROM `course` [ RunTime:0.000353s ]
+[2021-06-16T10:34:18+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000297s ]
+[2021-06-16T10:34:18+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000304s ]
+[2021-06-16T10:34:18+08:00][sql] CONNECT:[ UseTime:0.010472s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:18+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000325s ]
+[2021-06-16T10:34:19+08:00][sql] CONNECT:[ UseTime:0.010204s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:19+08:00][sql] SELECT * FROM `user` [ RunTime:0.000322s ]
+[2021-06-16T10:34:19+08:00][sql] CONNECT:[ UseTime:0.010179s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:19+08:00][sql] SELECT * FROM `course` [ RunTime:0.000341s ]
+[2021-06-16T10:34:19+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000290s ]
+[2021-06-16T10:34:19+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[2021-06-16T10:34:22+08:00][sql] CONNECT:[ UseTime:0.010571s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:22+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000321s ]
+[2021-06-16T10:34:22+08:00][sql] CONNECT:[ UseTime:0.011104s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:22+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000337s ]
+[2021-06-16T10:34:23+08:00][sql] CONNECT:[ UseTime:0.010444s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:23+08:00][sql] SELECT * FROM `user` [ RunTime:0.000336s ]
+[2021-06-16T10:34:23+08:00][sql] CONNECT:[ UseTime:0.010914s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:23+08:00][sql] SELECT * FROM `course` [ RunTime:0.000192s ]
+[2021-06-16T10:34:23+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000297s ]
+[2021-06-16T10:34:23+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[2021-06-16T10:34:24+08:00][sql] CONNECT:[ UseTime:0.000804s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:24+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000507s ]
+[2021-06-16T10:34:24+08:00][sql] CONNECT:[ UseTime:0.011345s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:24+08:00][sql] SELECT * FROM `user` [ RunTime:0.000318s ]
+[2021-06-16T10:34:24+08:00][sql] CONNECT:[ UseTime:0.010674s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:24+08:00][sql] SELECT * FROM `user` [ RunTime:0.000341s ]
+[2021-06-16T10:34:25+08:00][sql] CONNECT:[ UseTime:0.010514s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:25+08:00][sql] SELECT * FROM `course` [ RunTime:0.000369s ]
+[2021-06-16T10:34:25+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000291s ]
+[2021-06-16T10:34:25+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000275s ]
+[2021-06-16T10:34:25+08:00][sql] CONNECT:[ UseTime:0.010168s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:34:25+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000320s ]
+[2021-06-16T10:35:21+08:00][sql] CONNECT:[ UseTime:0.011694s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:35:21+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000214s ]
+[2021-06-16T10:35:21+08:00][sql] UPDATE `admin_user`  SET `pwd` = '81dc9bdb52d04dc20036dbd8313ed055'  WHERE  `id` = 1 [ RunTime:0.000129s ]
+[2021-06-16T10:35:45+08:00][sql] CONNECT:[ UseTime:0.011536s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:35:45+08:00][sql] SELECT * FROM `user` [ RunTime:0.000321s ]
+[2021-06-16T10:35:50+08:00][sql] CONNECT:[ UseTime:0.011108s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:35:50+08:00][sql] SELECT * FROM `user` WHERE  `name` LIKE '%sd%' [ RunTime:0.000358s ]
+[2021-06-16T10:35:53+08:00][sql] CONNECT:[ UseTime:0.010919s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:35:53+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000328s ]
+[2021-06-16T10:35:55+08:00][sql] CONNECT:[ UseTime:0.000753s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:35:55+08:00][sql] SELECT * FROM `user` [ RunTime:0.000256s ]
+[2021-06-16T10:35:58+08:00][sql] CONNECT:[ UseTime:0.010972s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:35:58+08:00][sql] SELECT * FROM `user` WHERE  `name` LIKE '%sd%' [ RunTime:0.000674s ]
+[2021-06-16T10:38:15+08:00][sql] CONNECT:[ UseTime:0.010873s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:38:15+08:00][sql] SELECT * FROM `course` [ RunTime:0.000545s ]
+[2021-06-16T10:38:15+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000382s ]
+[2021-06-16T10:38:15+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000290s ]
+[2021-06-16T10:38:36+08:00][sql] CONNECT:[ UseTime:0.011317s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:38:36+08:00][sql] SELECT * FROM `course` WHERE  `coursename` = '数学' LIMIT 1 [ RunTime:0.000364s ]
+[2021-06-16T10:38:36+08:00][sql] INSERT INTO `course` SET `coursename` = '数学' , `coursedesc` = '高等数学' , `courseimg` = 'courseImg/20210616\\b1f458cbbe42facbc13891a3dc7d1e91.png' , `createtime` = '2021-06-16 10:38:36' , `admin_id` = 1 [ RunTime:0.000297s ]
+[2021-06-16T10:38:36+08:00][sql] SHOW FULL COLUMNS FROM `course` [ RunTime:0.019994s ]
+[2021-06-16T10:38:37+08:00][sql] CONNECT:[ UseTime:0.010571s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:38:37+08:00][sql] SELECT * FROM `course` [ RunTime:0.000248s ]
+[2021-06-16T10:38:37+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000354s ]
+[2021-06-16T10:38:37+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[2021-06-16T10:38:37+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000280s ]
+[2021-06-16T10:39:43+08:00][sql] CONNECT:[ UseTime:0.000967s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:39:43+08:00][sql] SELECT * FROM `user` [ RunTime:0.000205s ]
+[2021-06-16T10:39:43+08:00][sql] CONNECT:[ UseTime:0.011314s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:39:43+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000347s ]
+[2021-06-16T10:39:51+08:00][sql] CONNECT:[ UseTime:0.010911s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:39:51+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000300s ]
+[2021-06-16T10:39:51+08:00][sql] DELETE FROM `admin_user` WHERE  `id` = 2 [ RunTime:0.000298s ]
+[2021-06-16T10:39:53+08:00][sql] CONNECT:[ UseTime:0.010897s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:39:53+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000366s ]
+[2021-06-16T10:41:50+08:00][sql] CONNECT:[ UseTime:0.004337s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:41:50+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000449s ]
+[2021-06-16T10:41:50+08:00][sql] DELETE FROM `admin_user` WHERE  `id` = 3 [ RunTime:0.000289s ]
+[2021-06-16T10:41:51+08:00][sql] CONNECT:[ UseTime:0.010409s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:41:51+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000329s ]
+[2021-06-16T10:45:31+08:00][sql] CONNECT:[ UseTime:0.010076s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:31+08:00][sql] SELECT * FROM `course` [ RunTime:0.000355s ]
+[2021-06-16T10:45:31+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000362s ]
+[2021-06-16T10:45:31+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[2021-06-16T10:45:31+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000273s ]
+[2021-06-16T10:45:32+08:00][sql] CONNECT:[ UseTime:0.010440s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:32+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000208s ]
+[2021-06-16T10:45:33+08:00][sql] CONNECT:[ UseTime:0.010203s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:33+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000358s ]
+[2021-06-16T10:45:35+08:00][sql] CONNECT:[ UseTime:0.010769s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:35+08:00][sql] SELECT * FROM `course` [ RunTime:0.000356s ]
+[2021-06-16T10:45:35+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000305s ]
+[2021-06-16T10:45:35+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000269s ]
+[2021-06-16T10:45:35+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[2021-06-16T10:45:36+08:00][sql] CONNECT:[ UseTime:0.010274s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:36+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000318s ]
+[2021-06-16T10:45:38+08:00][sql] CONNECT:[ UseTime:0.011035s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:38+08:00][sql] SELECT * FROM `course` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000386s ]
+[2021-06-16T10:45:39+08:00][sql] CONNECT:[ UseTime:0.009979s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:39+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000326s ]
+[2021-06-16T10:45:39+08:00][sql] CONNECT:[ UseTime:0.012393s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:39+08:00][sql] SELECT * FROM `user` [ RunTime:0.000306s ]
+[2021-06-16T10:45:40+08:00][sql] CONNECT:[ UseTime:0.000796s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:40+08:00][sql] SELECT * FROM `course` [ RunTime:0.000338s ]
+[2021-06-16T10:45:40+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000400s ]
+[2021-06-16T10:45:40+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000282s ]
+[2021-06-16T10:45:40+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[2021-06-16T10:45:44+08:00][sql] CONNECT:[ UseTime:0.010013s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:45:44+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000352s ]
+[2021-06-16T10:46:01+08:00][sql] CONNECT:[ UseTime:0.010166s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:46:01+08:00][sql] SELECT * FROM `course` [ RunTime:0.000329s ]
+[2021-06-16T10:46:01+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000270s ]
+[2021-06-16T10:46:01+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000197s ]
+[2021-06-16T10:46:01+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000149s ]
+[2021-06-16T10:46:02+08:00][sql] CONNECT:[ UseTime:0.010921s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:46:02+08:00][sql] SELECT * FROM `course` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000439s ]
+[2021-06-16T10:46:14+08:00][sql] CONNECT:[ UseTime:0.010870s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:46:14+08:00][sql] SELECT * FROM `course` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000371s ]
+[2021-06-16T10:46:17+08:00][sql] CONNECT:[ UseTime:0.010735s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:46:17+08:00][sql] SELECT * FROM `course` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000359s ]
+[2021-06-16T10:47:46+08:00][sql] CONNECT:[ UseTime:0.010729s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:47:46+08:00][sql] SELECT * FROM `course` [ RunTime:0.000359s ]
+[2021-06-16T10:47:46+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000353s ]
+[2021-06-16T10:47:46+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000259s ]
+[2021-06-16T10:47:46+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000263s ]
+[2021-06-16T10:47:48+08:00][sql] CONNECT:[ UseTime:0.010279s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:47:48+08:00][sql] SELECT * FROM `course` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000353s ]
+[2021-06-16T10:47:53+08:00][sql] CONNECT:[ UseTime:0.010962s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:47:53+08:00][sql] SELECT * FROM `course` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000354s ]
+[2021-06-16T10:49:15+08:00][sql] CONNECT:[ UseTime:0.010856s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:49:15+08:00][sql] SELECT * FROM `user` [ RunTime:0.000418s ]
+[2021-06-16T10:49:16+08:00][sql] CONNECT:[ UseTime:0.009883s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:49:16+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000303s ]
+[2021-06-16T10:51:33+08:00][sql] CONNECT:[ UseTime:0.010579s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:51:33+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'asda' LIMIT 1 [ RunTime:0.000370s ]
+[2021-06-16T10:51:33+08:00][sql] INSERT INTO `admin_user` SET `name` = 'asda' , `pwd` = 'a8f5f167f44f4964e6c998dee827110c' [ RunTime:0.000623s ]
+[2021-06-16T10:51:33+08:00][sql] SHOW FULL COLUMNS FROM `admin_user` [ RunTime:0.012021s ]
+[2021-06-16T10:51:35+08:00][sql] CONNECT:[ UseTime:0.010718s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:51:35+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000269s ]
+[2021-06-16T10:51:35+08:00][sql] CONNECT:[ UseTime:0.010587s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:51:35+08:00][sql] SELECT * FROM `user` [ RunTime:0.000336s ]
+[2021-06-16T10:52:52+08:00][sql] CONNECT:[ UseTime:0.011269s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:52:52+08:00][sql] SELECT * FROM `user` [ RunTime:0.000340s ]
+[2021-06-16T10:53:48+08:00][sql] CONNECT:[ UseTime:0.011082s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:53:48+08:00][sql] SELECT * FROM `course` [ RunTime:0.000346s ]
+[2021-06-16T10:53:48+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000358s ]
+[2021-06-16T10:53:48+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000267s ]
+[2021-06-16T10:53:48+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000268s ]
+[2021-06-16T10:55:37+08:00][sql] CONNECT:[ UseTime:0.010136s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:55:37+08:00][sql] SELECT * FROM `user` [ RunTime:0.000433s ]
+[2021-06-16T10:56:36+08:00][sql] CONNECT:[ UseTime:0.009842s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T10:56:36+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000292s ]
+[2021-06-16T11:08:08+08:00][sql] CONNECT:[ UseTime:0.000978s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T11:08:08+08:00][sql] SELECT * FROM `user` [ RunTime:0.000364s ]
+[2021-06-16T11:08:08+08:00][sql] CONNECT:[ UseTime:0.011553s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T11:08:08+08:00][sql] SELECT * FROM `course` [ RunTime:0.000295s ]
+[2021-06-16T11:08:08+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[2021-06-16T11:08:08+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[2021-06-16T11:08:08+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000170s ]
+[2021-06-16T11:37:26+08:00][sql] CONNECT:[ UseTime:0.001248s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-16T11:37:26+08:00][sql] SELECT * FROM `course` WHERE  `coursename` LIKE '%一节课%' [ RunTime:0.000404s ]

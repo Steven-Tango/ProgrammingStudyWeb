@@ -1,0 +1,56 @@
+[2021-06-08T12:29:49+08:00][sql] CONNECT:[ UseTime:0.034897s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:29:49+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.045938s ]
+[2021-06-08T12:29:49+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002107s ]
+[2021-06-08T12:29:49+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-08 12:29:48'  WHERE  `id` = 1 [ RunTime:0.016882s ]
+[2021-06-08T12:29:52+08:00][sql] CONNECT:[ UseTime:0.022872s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:29:52+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.002183s ]
+[2021-06-08T12:30:37+08:00][sql] CONNECT:[ UseTime:0.011233s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:30:37+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001879s ]
+[2021-06-08T12:30:44+08:00][sql] CONNECT:[ UseTime:0.010451s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:30:44+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'sa' LIMIT 1 [ RunTime:0.002746s ]
+[2021-06-08T12:30:44+08:00][error] [10501]SQLSTATE[HY000]: General error: 1364 Field 'lastlogin' doesn't have a default value[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-08T12:31:03+08:00][sql] CONNECT:[ UseTime:0.003326s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:31:03+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001943s ]
+[2021-06-08T12:31:10+08:00][sql] CONNECT:[ UseTime:0.018986s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:31:10+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.002243s ]
+[2021-06-08T12:31:22+08:00][sql] CONNECT:[ UseTime:0.016108s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:31:22+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'sa' LIMIT 1 [ RunTime:0.001911s ]
+[2021-06-08T12:31:22+08:00][error] [10501]SQLSTATE[HY000]: General error: 1364 Field 'lastlogin' doesn't have a default value[D:\DevTools\phpstudy_pro\WWW\tp\vendor\topthink\think-orm\src\db\PDOConnection.php:795]
+[2021-06-08T12:38:21+08:00][sql] CONNECT:[ UseTime:0.019920s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:38:21+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.002197s ]
+[2021-06-08T12:38:28+08:00][sql] CONNECT:[ UseTime:0.015310s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:38:28+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'sa' LIMIT 1 [ RunTime:0.001910s ]
+[2021-06-08T12:38:28+08:00][sql] INSERT INTO `admin_user` SET `name` = 'sa' , `pwd` = 'e10adc3949ba59abbe56e057f20f883e' [ RunTime:0.000647s ]
+[2021-06-08T12:38:28+08:00][sql] SHOW FULL COLUMNS FROM `admin_user` [ RunTime:0.001112s ]
+[2021-06-08T12:38:33+08:00][sql] CONNECT:[ UseTime:0.025636s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:38:33+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001977s ]
+[2021-06-08T12:38:57+08:00][sql] CONNECT:[ UseTime:0.026406s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:38:57+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.002414s ]
+[2021-06-08T12:38:58+08:00][sql] CONNECT:[ UseTime:0.015031s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:38:58+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001943s ]
+[2021-06-08T12:38:58+08:00][sql] CONNECT:[ UseTime:0.019153s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:38:58+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001947s ]
+[2021-06-08T12:38:58+08:00][sql] CONNECT:[ UseTime:0.021144s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:38:58+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.002339s ]
+[2021-06-08T12:38:58+08:00][sql] CONNECT:[ UseTime:0.010563s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:38:58+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001946s ]
+[2021-06-08T12:41:00+08:00][sql] CONNECT:[ UseTime:0.020666s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:41:00+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001789s ]
+[2021-06-08T12:42:29+08:00][sql] CONNECT:[ UseTime:0.011088s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:42:29+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.002436s ]
+[2021-06-08T12:42:30+08:00][sql] CONNECT:[ UseTime:0.021484s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:42:30+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000404s ]
+[2021-06-08T12:52:15+08:00][sql] CONNECT:[ UseTime:0.002664s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:52:15+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.002586s ]
+[2021-06-08T12:52:17+08:00][sql] CONNECT:[ UseTime:0.003610s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:52:17+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000485s ]
+[2021-06-08T12:52:17+08:00][sql] CONNECT:[ UseTime:0.001671s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:52:17+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001825s ]
+[2021-06-08T12:52:18+08:00][sql] CONNECT:[ UseTime:0.014462s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:52:18+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001970s ]
+[2021-06-08T12:52:19+08:00][sql] CONNECT:[ UseTime:0.023385s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:52:19+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.001826s ]
+[2021-06-08T12:52:20+08:00][sql] CONNECT:[ UseTime:0.024936s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:52:20+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000387s ]
+[2021-06-08T12:52:22+08:00][sql] CONNECT:[ UseTime:0.022620s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-08T12:52:22+08:00][sql] SELECT * FROM `admin_user` [ RunTime:0.000499s ]

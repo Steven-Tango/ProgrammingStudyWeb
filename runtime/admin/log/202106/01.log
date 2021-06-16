@@ -1,0 +1,93 @@
+[2021-06-01T09:00:30+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:01:02+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:01:03+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:01:03+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:01:03+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:01:27+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2021-06-01T09:01:32+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2021-06-01T09:03:01+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:03:01+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:03:01+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:03:01+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:03:02+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:03:07+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:03:08+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:03:08+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:04:23+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:04:24+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:04:24+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:04:29+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2021-06-01T09:04:41+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2021-06-01T09:05:49+08:00][error] [0]语法错误: unexpected ';', expecting ']'
+[2021-06-01T09:07:17+08:00][error] [0]Call to undefined method app\admin\controller\Index::redirecTo()
+[2021-06-01T09:07:50+08:00][error] [0]Call to undefined method app\admin\controller\Index::redirecTo()
+[2021-06-01T09:07:51+08:00][error] [0]Call to undefined method app\admin\controller\Index::redirecTo()
+[2021-06-01T09:07:51+08:00][error] [0]Call to undefined method app\admin\controller\Index::redirecTo()
+[2021-06-01T09:11:02+08:00][error] [0]Class 'app\admin\controller\HttpResponseException' not found
+[2021-06-01T09:11:43+08:00][error] [0]Call to undefined method app\admin\controller\Index::redirecTo()
+[2021-06-01T09:11:59+08:00][error] [0]Class 'app\admin\controller\HttpResponseException' not found
+[2021-06-01T09:19:14+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2021-06-01T09:20:10+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2021-06-01T09:28:58+08:00][sql] CONNECT:[ UseTime:0.011354s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T09:28:58+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.003102s ]
+[2021-06-01T09:28:58+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000661s ]
+[2021-06-01T09:28:58+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-01 09:28:58'  WHERE  `id` = 1 [ RunTime:0.000649s ]
+[2021-06-01T09:28:59+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:29:41+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:29:48+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:30:15+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:32:44+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:32:45+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:32:45+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:32:45+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:32:45+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:32:45+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:32:55+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:34:41+08:00][error] [0]Class 'think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:37:06+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:37:06+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:37:06+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:37:07+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:37:07+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:37:07+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:39:21+08:00][error] [0]Class 'app\think\facde\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:40:20+08:00][error] [0]Class 'app\think\facade\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:40:22+08:00][error] [0]Class 'app\think\facade\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:40:22+08:00][error] [0]Class 'app\think\facade\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:40:23+08:00][error] [0]Class 'app\think\facade\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:40:23+08:00][error] [0]Class 'app\think\facade\View' not found[D:\phpstudypro\WWW\tp\app\admin\controller\Index.php:16]
+[2021-06-01T09:40:30+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\header.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:41:00+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\header.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:41:43+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\header.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:41:56+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\header.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:42:25+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\header.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:42:26+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\header.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:42:26+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\header.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:42:37+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\head.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:42:38+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\head.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:42:38+08:00][error] [0]模板文件不存在:D:\phpstudypro\WWW\tp\app\admin\view\commom\head.html[D:\phpstudypro\WWW\tp\vendor\topthink\think-template\src\Template.php:1255]
+[2021-06-01T09:45:15+08:00][sql] CONNECT:[ UseTime:0.001795s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T09:45:15+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.003191s ]
+[2021-06-01T09:45:15+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000456s ]
+[2021-06-01T09:45:15+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-01 09:45:15'  WHERE  `id` = 1 [ RunTime:0.110037s ]
+[2021-06-01T09:58:33+08:00][sql] CONNECT:[ UseTime:0.011581s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T09:58:33+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.002323s ]
+[2021-06-01T09:58:33+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000546s ]
+[2021-06-01T09:58:33+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-01 09:58:33'  WHERE  `id` = 1 [ RunTime:0.000541s ]
+[2021-06-01T11:31:54+08:00][sql] CONNECT:[ UseTime:0.011570s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T11:31:54+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000821s ]
+[2021-06-01T11:31:54+08:00][sql] UPDATE `admin_user`  SET `pwd` = 'f1290186a5d0b1ceab27f4e77c0c5d68'  WHERE  `id` = 1 [ RunTime:0.000728s ]
+[2021-06-01T11:31:54+08:00][sql] CONNECT:[ UseTime:0.011240s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T11:31:54+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002423s ]
+[2021-06-01T11:32:56+08:00][sql] CONNECT:[ UseTime:0.011133s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T11:32:56+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.002275s ]
+[2021-06-01T11:33:06+08:00][sql] CONNECT:[ UseTime:0.011587s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T11:33:06+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000785s ]
+[2021-06-01T11:34:42+08:00][sql] CONNECT:[ UseTime:0.011419s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T11:34:42+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.002386s ]
+[2021-06-01T11:39:13+08:00][sql] CONNECT:[ UseTime:0.011843s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T11:39:13+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000687s ]
+[2021-06-01T19:05:27+08:00][sql] CONNECT:[ UseTime:0.024638s ] mysql:host=localhost;port=3306;dbname=course;charset=utf8
+[2021-06-01T19:05:27+08:00][sql] SELECT * FROM `admin_user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.002069s ]
+[2021-06-01T19:05:27+08:00][sql] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000323s ]
+[2021-06-01T19:05:27+08:00][sql] UPDATE `admin_user`  SET `lastlogin` = '2021-06-01 19:05:27'  WHERE  `id` = 1 [ RunTime:0.000378s ]
