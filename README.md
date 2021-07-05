@@ -711,7 +711,7 @@ Class User extends Model{
         box-shadow:0 0 10px  rgba(0,0,0,.8);
     }
 ```
-4. head.html中的引入样式
+4. head.html中的第10行加入
 ```html
 <link rel="stylesheet" href="/static/css/admin.css">
 ```
@@ -1284,57 +1284,74 @@ abstract class BaseController
   }
 ```
 
-
+# 20210608
+## 项目启动
+1. XAMPP->config(右上角)->service and port settings->443改为4431
+2. XAMPP->apache->config->httpd-ssl.conf(第二个)->把listen 443 改为listen 4431
+3. XAMPP->apache->config->httpd.conf(第一个)->把DocumentRoot的地址改为D:/tp/public
+4. XAMPP->apache->start
+5. XAMPP->mysql->start
+6. 浏览器访问localhost/phpmyadmin/ 
+7. 导入course.sql
+8. 把D:/tp 直接拉入VSCode软件
+9. 浏览器访问localhost/admin.php/ 跳转到登录 然后登录成功进入首页
 
 ## 用户列表
-1. app\admin\controller\Index.php 找到userController方法
-    把print_r($db_res)删除,改成View::assign('userlist',$db_res);
-2. 数据渲染 :将数据库保存的数据按照相应的样式放置到前台(视图)进行展示
-    -app\admin\view\index\user_controller.html
-```html
-     {notempty name="userlist"}
-        <!-- 不为空 -->
-            {foreach name="userlist" item="user"}
-                <tr>
-                    <td>{$user->id}</td>
-                    <td>{$user->name}</td>
-                    <td>{$user->createtime}</td>
-                    <td>{$user->lastlogin}</td>
-                    <td>
-                        <div class="layui-btn-group">
-                            <a class="layui-btn  layui-btn-xs">重置密码</a>
-                            <a class="layui-btn layui-btn-danger layui-btn-xs">删除用户</a>
-                        </div>
-                    </td>
-                </tr>
-            {/foreach}
-        {else/}
-        <!-- 为空 -->
-        <tr>
-            <td colspan="3">暂无数据</td>
-        </tr>
-        {/notempty}
+1. app\admin\controller\Index.php 找到userControl方法
+    把print_r($db_res)删除 改为View::assign("userlist",$db_res);
+```php
+    function userControl(){
+          $db_res=User::select_all($this->userid);
+          View::assign("userlist",$db_res);
+          return view();
+      }
 ```
+2. 数据的渲染 就是将数据库保存的数据按照相应的样式放到前台(视图)进行展示
+- app\admin\view\index\user_Control.html
+```html
+    {notempty name="userlist"}
+       <!-- 不为空 -->
+        {foreach name="userlist" item="user"}
+            <tr>
+                <td>{$user->id}</td>
+                <td>{$user->name}</td>
+                <td>{$user->createtime}</td>
+                <td>{$user->lastlogin}</td>
+                <td>
+                    <div class="layui-btn-group">
+                        <button class="layui-btn layui-btn-xs">重置密码</button>
+                        <button class="layui-btn layui-btn-xs layui-btn-danger">删除账户</button>
+                    </div>
+                </td>
+            </tr>
+        {/foreach}
+    {else/}
+       <!-- 为空 -->
+      <tr><td colspan="5">暂无数据</td></tr>  
+    {/notempty}
+```
+
 ## 新增账户
-1. 给新增账户添加onclick事件 app\admin\view\index\user_controller
+1. 给新增账户按钮添加onclick事件 app\admin\view\index\user_control.html
 ```html
-     <button class="layui-btn layui-btn-normal layui-btn-sm " onclick="addUser()>新增账户</button>
+    <button ...  onclick="addUser()">新增账户</button>
 ```
-2. 添加addUser方法  ->在user_controller.html的最后加<script></script>
+2. 添加addUser方法 在app\admin\view\index\user_control.html的最后加入<script></script>
 ```html
-<script>
-    function addUser(){
-        layer.open({
-            type:1,
-            areas:["500px"],
-            content:`{include file = "common/addUserForm"}`
-        })
-    }
+    <script>
+        function addUser(){
+            layer.open({
+                type:1,
+                area:["500px"],
+                title:"新增账户",
+                content:`{include file="common/addUserForm"}`
+            })
+        }
     </script>
 ```
 3. 在app\admin\view\common文件夹中添加addUserForm.html
 ```html
-    <div class="user-form" style="padding:20px; padding-right:40px;">
+<div class="user-form" style="padding:20px; padding-right:40px;">
     <form class="layui-form" >
         <div class="layui-form-item">
             <label class="layui-form-label">账户</label>
@@ -1356,28 +1373,31 @@ abstract class BaseController
 </div>
 ```
 4. 提交数据
-- 在addUserForm.html第二行加进入id="form",给提交按钮添加userFormSubmit事件，最后一行加入
-```html 
-    <script>
+- 在addUserForm.html
+    第2行加入id="form"
+    第16行加入 onclick="userFormSubmit()"
+- 在user_control.html的script中加入userFormSubmit方法
+```html
+<script>
     var index;
-    function addUser(){
-        index=layer.open({
-            type:1,
-            area:["500px"],
-            title:"新增账户",
-            content:`{include file="common/addUserForm"}`
-        })
-    }
+     function addUser(){
+            index=layer.open({
+                type:1,
+                area:["500px"],
+                title:"新增账户",
+                content:`{include file="common/addUserForm"}`
+            })
+    } 
     function userFormSubmit(){
         var form=document.getElementById("form");
-        var formDate={
+        var  formData={
             'username':form.username.value,
-            'userpwd':form.pwd.value
+            'pwd':form.username.pwd
         }
-        $.post('api/createUser',formDate,function(res){
+        $.post('api/createUser',formData,function(res){
             layer.msg(res.msg,{shift:-1,time:800},function(){
-                if(res.code===200){
-                    //关闭弹窗
+                if(res.code==200){
+                    // 关闭弹窗
                     layer.close(index);
                 }
             })
@@ -1385,135 +1405,112 @@ abstract class BaseController
     }
 </script>
 ```
-### 创建api控制器，来放置我们的需要使用ajax提交的数据接口
-1. app\admin\controller里面创建API.php
+### 创建api控制器，来放置我们需要用的使用ajax提交的数据的接口
+1. app\admin\controller里面创建Api.php
 ```php
-  namespace app\admin\controller;
+<?php
+namespace app\admin\controller;
 use app\BaseController;
+use app\admin\model\User;
 Class Api extends BaseController{
     private $userid;
     function initialize(){
         session_start();
         if(!$_SESSION['userid']){
-            return $this->redirectTo('login.html');
+            return $this->redirectTo("login.html");
         }
         $this->userid=$_SESSION['userid'];
     }
     public function createUser(){
         $res=request()->post();
-        if(!isset($res['username']) || !isset($res['pwd'])){
-            return this->res_json(500,"参数传递错误");
+        if(!isset($res["username"]) || !isset($res['pwd'])){
+            return $this->res_json(500,"参数传递错误");
         }
         $roles=[
             "username"=>"require",
             "pwd"=>"require"
         ];
         $msgs=[
-            "username.require"=>"账户为空",
-            "pwd.require"=>"密码为空",
+            "username.require"=>"账户名为空",
+            "pwd.require"=>"密码为空"
         ];
         try{
             $this->validate($res,$roles,$msgs);
         }catch(\Exception $e){
             return $this->res_json(500,$e->getError());
         }
-        $user=User::create_user($res['username'],$res['pwd']);
-        if(!$user) return $this->res_json(500,"添加失败");
+        $user=User::create_user($res['username'],$res["pwd"]);
+        if(!$user) return $this->res_json(500,"添加失败，账户重复");
         return $this->res_json(200,"添加成功");
     }
 }
+?>
 ```
-3. 与数据库打交道，在app\admin\model\User.php添加create_user方法
+3. 与数据库打交道,在app\admin\model\User.php中 添加create_user方法
+- 在最后一个}前面加入
 ```php
-    public static function create_user($username,$pwd){
-            $user=new User;
-            if(User::where('name',$username)->find()){
-                return "账户名已存在";
-            }
-           $user=new User;
-           $user->save([
-               'name'=>$username,
-               'pwd'=>md5($pwd)
-           ]);
-           return $user->id;
-        }
+     public static function create_user($username,$pwd){
+        if(User::where('name',$username)->find()){
+            return 0;
+        } 
+        $user = new User;
+        $user->save([
+            'name'  =>  $username,
+            'pwd' =>  md5($pwd)
+        ]);
+        return $user->id;
+    }
 ```
-         
-### 重置密码
-1. app\admin\controller\Api.php加入resetPwd方法
+# 2021/6/9
+## 重置密码
+1. app\admin\model\User.php讲resetPwd的参数$pwd改为$pwd="1234"
+```php
+    public static function resetPwd($userid,$pwd='1234'){
+        ...
+    }
+```
+2. app\admin\controller\Api.php加入resetPwd方法
 ```php
     public function resetPwd(){
-            $res=request()->post();
-            if(!isset($res['userid'])){
-                return $this->res_json(500,"未传入需要修改的密码");
-            }
-            if(User::resetPwd($res['userid'])){
-                return $this->res_json(200,"重置密码成功");
-            }
-            return $this->res_json(500,"重置密码失败");
+        $res=request()->post();
+        if(!isset($res['userid'])){
+            return $this->res_json(500,"未传入需要修改的userid");
         }
+        if(User::resetPwd($res['userid'])){
+            return $this->res_json(200,"重置密码成功");
+        }
+        return $this->res_json(500,"重置密码失败"); 
+    }
 ```
-2. app\admin\view\Index\User_controller.html找到重置密码添加resetPwd方法
+3. app\admin\view\Index\User_control.html找到重置密码
 ```html
-<button class="layui-btn  layui-btn-xs" onclick="resetPwd({$user->id},{$user->name})">重置密码</button>
+    <button class="layui-btn layui-btn-xs" onclick="resetPwd({$user->id},{$user->name})">重置密码</button>                        
 ```
-3. 在app\admin\view\Index\User_controller.html script里面加入resetPwd方法
+- 在script里面加入resetPwd方法
 ```js
-    function resetPwd(userid,username){
-        layer.confirm("你确定要重置"+username+"的密码",function(index){
+ function resetPwd(userid,username){
+        layer.confirm("您确定要重置"+username+"的密码?",function(index){
             $.post("api/resetPwd",{"userid":userid},function(res){
                 layer.msg(res.msg,{shift:-1,time:800},function(){
                     if(res.status==200){
                         layer.close(index);
                     }
                 })
-            })
+            });
         });
     }
 ```
-4. app\admin\model\User.php加入resetPwd方法
-```php
-    
-       public static function resetPwd($userid,$pwd="1234"){
-           $user=User::where('id',$userid)->findOrEmpty();
-           if($user){
-               $user->pwd=md5($pwd);
-               $user->save();
-               return true;
-           }
-           return false;
-       }
-```
 
 ## 删除账户
-1.  app\admin\controller\Api.php加入delUser方法
-```php
-    public function delUser(){
-            $res=request()->post();
-            if(!isset($res['userid'])){
-                return $this->res_json(500,"未传入需要删除的账户");
-            }
-            if(User::delUser($res['userid'])){
-                return $this->res_json(200,"删除账户成功");
-            }
-            return  $this->res_json(500,"删除账户失败");
-        }
-   ``` 
-2. app\admin\view\Index\user_controller添加delUser事件
-    <button class="layui-btn layui-btn-danger layui-btn-xs" onclick="delUser('{$user->id}','{$user->name}')">删除用户</button>
-3. app\admin\view\model\User.php加入delUser方法
-```php
- public static function delUser($userid){
-            $user=User::where('id',$userid)->find();
-            if(!user) return 0;
-            $user->delete();
-            return true;
-        }
+1. app\admin\view\index\user_control.html找到删除账户，加入onclick事件
+```html
+<button class="layui-btn layui-btn-xs layui-btn-danger" onclick="delUser('{$user->id}','{$user->name}')">删除账户</button>
+ 
 ```
-4. app\admin\view\Index\user_controller的script里面添加delUser方法
+- 在script中加入delUser方法
 ```js
-    function delUser(userid,username){
-        layer.confirm("你确定要删除"+username+"的账户",function(index){
+   function delUser(userid,username){
+        layer.confirm("您确定要删除"+username+"的账户吗?",function(index){
             $.post("api/delUser",{"userid":userid},function(res){
                 layer.msg(res.msg,{shift:-1,time:800},function(){
                     if(res.status==200){
@@ -1521,54 +1518,75 @@ Class Api extends BaseController{
                         location.reload();
                     }
                 })
-            })
+            });
         });
-    }
+    }    
 ```
-## 搜索账户
-1. app\admin\model\User.php修改select_all方法
+2. app\admin\view\controller\Api.php加入delUser的方法
 ```php
-    public static function select_all($userid){
-            if($search){
-                return User::where("name",'like',"%".$search."%")->select();
-            }
-            return User::select();
+    public function delUser(){
+        $res=request()->post();
+        if(!isset($res['userid'])){
+            return $this->res_json(500,"未传入需要删除的userid");
         }
-
+        if(User::delUser($res['userid'])){
+            return $this->res_json(200,"删除账户成功");
+        }
+        return $this->res_json(500,"删除账户失败");
+    }
 ```
-2. app\admin\controller\Index.php修改找到userController()改写为
-    ```php
-    function userController()
-    {
-        $res=request()->get();
-        if(isset($res['search'])){
-            $db_res=User::select_all($res['search']);
-        }else{
-            $db_res=User::select_all();
+3. app\admin\view\model\User.php加入delUser方法
+```php
+    public static function delUser($userid){
+        $user=User::where('id',$userid)->find();
+        if(!$user) return 0;
+        $user->delete();
+        return true;
+    }
+```
+
+## 搜索账户
+1. app\admin\model\User.php找到select_all()改写为
+```php
+ public static function select_all($search=null){
+        if($search){
+            return User::where("name",'like',"%".$search."%")->select();
         }
-        View::assign("userlist",$db_res);
-        return view();
+        return User::select();
     }
-    ```
-3. app\admin\view\Index\user_controller 找到搜索按钮为input添加searcheInput事件、i标签添加search事件
-    ```html
-    <input type="text" placeholder="请输入需要搜索的内容" id="searchInput" class="layui-input">
-        <i class="layui-icon layui-icon-search" onclick="search()"></i>
-    ```
-4. app\admin\view\Index\user_controller里的script添加 search方法
+```
+2. app\admin\controller\Index.php找到userControl()改写为
+```php
+function userControl(){
+    $res=request()->get();
+    if(isset($res['search']) && $res['search']){
+        $db_res=User::select_all($res['search']);
+    }else{
+      $db_res=User::select_all();
+    }
+    View::assign("userlist",$db_res);
+    return view();
+}
+```
+3. app\admin\view\Index\user_control.html中找到搜索按钮 <i class="layui-icon layui-icon-search"></i>加click事件
+```html
+<input id="searchInput">
+<i class="layui-icon layui-icon-search" onclick="search()"></i>
+```
+- 在script中加入search方法
 ```js
-    function search(){
-        var searchInput=document.getElementById('searchInput');
-        var searchValue=searchInput.value;
-        location.href="?search="+searchValue;
-    }
+function search(){
+    var searchInput=document.getElementById("searchInput");
+    var searchValue=searchInput.value;
+    location.href="?search="+searchValue;
+}
 ```
 ## 课程列表
-1. 修改数据库的结构，给course表加入外键约束
-```sql
-ALTER TABLE course ADD CONSTRAINT admin_id FOREIGN KEY(admin_id) REFERENCES admin_user(id)
+1. 修改数据的结构，给course表加入一个外键约束 访问localhost/phpmyadmin/下的course表点击查询输入以下代码
 ```
-2. app\admin\controller\Index.php添加方法
+    ALTER TABLE course ADD CONSTRAINT admin_id FOREIGN KEY(admin_id) REFERENCES admin_user(id)
+```
+2. app\admin\controller\Index.php 添加方法
 ```php
     public function course(){
         $courses=Course::select_all();
@@ -1576,95 +1594,329 @@ ALTER TABLE course ADD CONSTRAINT admin_id FOREIGN KEY(admin_id) REFERENCES admi
         return view();
     }
 ```
--- Index.php上面加入use..
-```
+- Index.php的上面写了use ...下面加入新的use
+```php
     use app\admin\model\Course;
 ```
-3. app\admin\model新建文件Course.php
+3. app\admin\model文件夹新建一个Course.php
 ```php
-    <?php
-        namespace app\admin\model;
-        use think\model;
-        Class Course extends Model{
-            protected $table="course";
-            //连接admin_user表
-            public function user(){
-                return $this->belongsTo(User::calss,'admin_id');
-            }
-            public static function select_all(){
-                return Course::with('User')->select();
-            }
+<?php
+    namespace app\admin\model;
+    use think\model;
+    Class Course extends Model{
+         protected $table="course";
+        //  连接admin_user表
+        public function user(){
+            return $this->belongsTo(User::class,'admin_id');
         }
-    ?>  
+        public static function select_all(){
+            return Course::with('User')->select();
+        }
+    }
 ```
 4. app\admin\view\Index文件夹下新建html文件 course.html
 ```html
-    {include file="common/head"}
-    课程管理
+{include file="common/head"}
+课程管理
     {$couseList}
-    {include file="common/foot"}
+{include file="common/foot"}
 ```
-5. app\admin\view\common\head.html找到链接的课程管理修改为
+5. app\admin\view\common\head.html找到连接的课程管理修改为
 ```html
-    <div class="layui-nav-item">
-        <a href="#">课程管理</a>
-    </div>
+     <div class="layui-nav-item">
+         <!-- 链接地址 -->
+         <a href="#">课程管理</a>
+     </div>
     改为
-     <div class="layui-nav-item {if condition='$action eq "Course"'}layui-this{/if}">
-            <a href="course.html">课程管理</a>
+    <div class="layui-nav-item {if condition='$action eq "Course"'}layui-this{/if}">
+        <!-- 链接地址 -->
+        <a href="course.html">课程管理</a>
     </div>
 ```
-6. 修改路由
+6. 修改路由route  app\admin\route\app.php加入新路由
 ```php
-    Route::get('course','index/Course')->ext('html');
+    Route::get('course.html','index/course')->ext('html');
 ```
 
+# 20210615
+## 启动项目
+1. 启动apache
+2. 启动mysql
+3. 导入course.sql
+4. 访问localhost:端口号/admin.php/ 跳转到login登录
 
-##  课程管理页面
-1. 修复bug-> app\admin\view\index\course.html ->去复制index\user_Controller.html
-2. course.html中的新增账户改为新增课程  addUser()->addCourse()
-3. 修改table
-    -修改thead
-    ```php
-        <thead>
-            <tr>id</tr>
-            <tr>课程名称</tr>
-            <tr>课程描述</tr>
-            <tr>课程图片</tr>
-            <tr>课程创建时间</tr>
-            <tr>课程创建人</tr>
-            <th style="width:150px;">操作</th>
-        </thead>
-    ```
-    ```php
-     <tbody>
-        {notempty name="courseList"}
-        <!--不为空-->
-        {foreach name="courseList" item="course"}
+## 课程管理页面
+1. 修复一下bug 在app\admin\view\common\head.html找到链接的课程管理修改为
+```html
+     <div class="layui-nav-item">
+         <!-- 链接地址 -->
+         <a href="#">课程管理</a>
+     </div>
+    改为
+    <div class="layui-nav-item {if condition='$action eq "course"'}layui-this{/if}">
+        <!-- 链接地址 -->
+        <a href="course.html">课程管理</a>
+    </div>
+```
+
+2. 课程管理页面 在app\admin\view\index\course.html 去复制index\user_control.html
+- 把user_control.html的{include}中间的代码复制到course.html的{include}中间
+3. course.html中的新增账户=>新增课程，addUser()=>addCourse()
+4. 修改table 
+    1. 修改thead
+```php
+    <thead>
         <tr>
-            <td>{$course->id}</td>
-            <td>{$course->coursename}</td>
-            <td>{$course->coursedesc}</td>
-            <td>{$course->courseimg}</td>
-            <td>{$course->createtime}</td>
-            <td>{$course->user->name}</td>
-            <td>
-                <div class="layui-btn-group">
-                    <button class="layui-btn  layui-btn-xs" onclick="onchange('$course')">修改课程</button>
-                    <button class="layui-btn layui-btn-danger layui-btn-xs" onclick="delCour('{$course->id}','{$course->coursename}')">删除课程</button>
-                </div>
-            </td>
+        <th>id</th>
+        <th>课程名称</th>
+        <th>课程描述</th>
+        <th>课程封面</th>
+        <th>创建时间</th>
+        <th>创建人</th>
+        <th>操作</th>
         </tr>
+    </thead>
+```
+    2. 修改tbody
+```php
+     {notempty name="courseList"}
+       <!-- 不为空 -->
+        {foreach name="courseList" item="course"}
+            <tr>
+                <td>{$course->id}</td>
+                <td>{$course->coursename}</td>
+                <td>{$course->coursedesc}</td>
+                <td>{$course->courseimg}</td>
+                <td>{$course->createtime}</td>
+                <td>{$course->user->name}</td>
+                <td>
+                    <div class="layui-btn-group">
+<button class="layui-btn layui-btn-xs" onclick="changeCourse('{$course}')">修改课程</button>
+<button class="layui-btn layui-btn-xs layui-btn-danger" onclick="delCourse('{$course->id}','{$course->coursename}')">删除课程</button>
+                    </div>
+                </td>
+            </tr>
         {/foreach}
-        {else/}
-        <!--为空-->
-        <tr><td colspan="3">暂无数据</td></tr>
-        {/notempty}
-        
-    </tbody>
-    ```
+       {else/}
+       <!-- 为空 -->
+      <tr><td colspan="7">暂无数据</td></tr>  
+       {/notempty}
+```
 
-## 新增账户
-1. course.html中最后加入script标签
-2. 在script标签里面加入
-    
+## 新增账户和修改账户
+1. 在{include file="common/foot"}后面<script>前面加入代码
+```html
+ <div id="dialog" style="display:none;padding:20px;">
+    <form class="layui-form" id="form">
+        <input type="hidden" name="id"/>
+        <div class="layui-form-item">
+            <span class="layui-form-label">课程名称</span>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input" name="coursename">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <span class="layui-form-label">课程描述</span>
+            <div class="layui-input-block">
+              <textarea name="coursedesc" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <span class="layui-form-label">课程图片</span>
+            <div class="layui-input-block">
+                <input type="file" class="layui-input" name="courseimg">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <a class="layui-btn" onclick="courseFormSubmit()">提交</a>
+            <button class="layui-btn layui-btn-danger" type="reset">重置</button>
+        </div>
+    </form>
+</div>
+```
+2. course.html中的最后加入script标签
+3. 在script标签里加入以下代码
+```html
+<script>
+  //1. 找到我们弹窗的位置
+  var $dialog=$("#dialog");
+    var form=$dialog.find("#form")[0];//将jquery对象转换为js对象
+    var isAdd=false;//是否是添加
+    function resetForm(){
+        form.reset();
+        $("#uploadImg").attr("src","");
+    }
+    function addCourse(){
+        resetForm();
+        //2. 调用弹窗，与修改弹窗一样，所以可以使用一个方法来封装
+        formOpen("新增课程");
+        isAdd=true;//这里是新增的弹窗
+    }
+    function changeCourse(course){
+        resetForm();
+        var checkCourse=JSON.parse(course);//是讲json的字符串转化为json对象
+        console.log(checkCourse);
+        form.coursename.value=checkCourse.coursename;
+        form.coursedesc.value=checkCourse.coursedesc;
+        form.courseimg.value=checkCourse.courseimg;
+        form.id.value=checkCourse.id;
+        formOpen("修改课程");
+        isAdd=false;//这里是修改的弹窗
+    }
+    function formOpen(title){
+        layer.open({
+            title:title,
+            type:1,
+            area:["500px","420px"],
+            content:$dialog
+        })
+    }
+    function courseFormSubmit(){
+        var formData={
+            coursename:form.coursename.value,
+            coursedesc:form.coursedesc.value,
+            courseimg:form.courseimg.value
+        };
+        var postUrl=isAdd?"api/addCourse":"api/changeCourse";
+        if(!isAdd) formData.id=form.id.value;
+        $.post(postUrl,formData,function(res){
+            layer.msg(res.msg,{shift:-1,time:800},function(){
+                if(res.status==200){
+                    location.reload();
+                }
+            })
+        });
+    }
+ var uploadInst = layui.upload.render({
+    elem: '#uploadBtn'
+    ,url: '/admin.php/api/upload' //改成您自己的上传接口
+    ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+        $('#uploadImg').attr('src', result); //图片链接（base64）
+      });
+      
+      layer.msg('上传中', {icon: 16, time: 0});
+    }
+    ,done: function(res){
+      //如果上传失败
+      if(res.status !=200){
+        return layer.msg('上传失败');
+      }
+      layer.msg('上传成功', {icon: 1});
+    //   ...成功之后的事情
+        form.courseimg.value=res.msg;
+    }
+  });
+</script>
+```
+
+# 20210616 
+## 查漏补缺
+1. app\admin\model\course.php 的course_change方法
+修改 $db_res2=Course::where("coursename",$course['coursename'])->find();
+改为
+ $db_res2=Course::where("coursename",$course['coursename'])->where("id","<>",$db_res->id)->find();
+           
+
+
+## 修改课程
+### app\admin\view\index\course.html
+1. 找到修改课程的按钮 
+onclick="changeCourse('{$course}')" 
+改为
+onclick="changeCourse('{$course->id}')"
+
+2. 找到changeCourse方法
+```js
+    function changeCourse(courseid){
+        resetForm();
+        $.post("api/courseById",{id:courseid},function(res){
+            if(res.status===200){
+            var checkCourse=res.data;//是讲json的字符串转化为json对象
+            console.log(checkCourse);
+            form.coursename.value=checkCourse.coursename;
+            form.coursedesc.value=checkCourse.coursedesc;
+            form.courseimg.value=checkCourse.courseimg;
+            form.id.value=checkCourse.id;
+            formOpen("修改课程");
+            isAdd=false;//这里是修改的弹窗
+            }
+        })
+        
+    }
+```
+### app\admin\controller\api.php
+1. 新增方法 courseById
+```php
+    public function courseById(){
+        $id=request()->post("id");
+        if($id){
+            $db_res=Course::select_by_id($id);
+            return $this->res_json(200,"查询成功",$db_res);
+        }
+        return $this->res_json(500,"未传入courseid");
+    }
+```
+### app\admin\model\course.php
+1. 新增方法 select_by_id
+```php
+    public static function select_by_id($id){
+        return Course::where("id",$id)->find();
+    }
+```
+
+## 删除课程
+1. app\admin\model\course.php
+- 新增方法 delete_by_id
+```php
+    public static function delete_by_id($id){
+        $course=Course::select_by_id($id);
+        if(!$course){return false;}
+        $course->delete();
+        return true;
+    }
+```
+2. app\admin\controller\api.php
+- 新增方法delCourse
+```php
+    public function delCourse(){
+        $id=request()->post("id");
+        if(!$id) return $this->res_json(500,"不知道需要删除的课程id");
+        if(Course::delete_by_id($id)){
+            return $this->res_json(200,"课程删除成功");
+        }
+        return $this->res_json(500,"未找到您需要删除的课程");
+    }
+```
+3. app\admin\view\course.html
+- 找到删除课程按钮 onclick="delCourse('{$course->id}','{$course->coursename}')"
+- 在script当中加入新方法 delCourse()
+```js
+    function delCourse($courseid,$coursename){
+        layer.confirm("您确定要删除"+$coursename+"课程吗？","警告",function(index){
+            $.post("api/delCourse",{id:$courseid},function(res){
+                layer.msg(res.msg,{shift:-1,time:800},function(){
+                    if(res.status==200){
+                        location.reload();
+                    }
+                });
+            });
+        })
+    }
+```
+
+## 图片展示
+1. 找到 config/filesystem.php
+把第5行的local改为public
+```php
+     'default' => env('filesystem.driver', 'public'),
+```
+2. app\admin\view\index\course.html中
+找到{$course->courseimg}
+改为
+<img src="/storage/{$course->courseimg}" style="max-height:50px">
+
+找到changeCourse方法
+加一句话在form.courseimg.value=checkCourse.courseimg;后面加
+$("#uploadImg").attr("src", '/storage/'+checkCourse.courseimg)
